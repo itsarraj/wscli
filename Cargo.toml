@@ -1,0 +1,18 @@
+[package]
+name = "wscli"
+version = "0.1.0"
+edition = "2021"
+description = "A headless WebSocket client CLI to connect, send payloads, and print responses"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/wscli"
+readme = "README.md"
+keywords = ["websocket", "ws", "client", "cli"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.21", features = ["native-tls"] }
+futures-util = "0.3"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
